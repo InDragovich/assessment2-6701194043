@@ -2,8 +2,8 @@
 $host         = "ec2-18-233-83-165.compute-1.amazonaws.com";
 $port         = "port = 5432";
 $dbname       = "dbname = dcmgivdkils91u";
-$user         = "ntmzeddiidsezd";
-$sandi        = "e395ceec2d7a2be3c3e18597213cb399227fd12875b3beb3f288f7ae5e3a166d";
+$user         = "user = ntmzeddiidsezd";
+$sandi        = "password = e395ceec2d7a2be3c3e18597213cb399227fd12875b3beb3f288f7ae5e3a166d";
 
 $conn = mysqli_connect("$host", "$port", "$dbname ", "$user","$sandi");
 
