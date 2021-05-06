@@ -22,7 +22,6 @@ function tambah($data)
 {
   global $conn;
   //ambil data dari tiap elemen dalam form
-  $id   = htmlspecialchars($data["id"]);
   $smt  = htmlspecialchars($data["semester"]);
   $ipk  = htmlspecialchars($data["ipk"]);
 
