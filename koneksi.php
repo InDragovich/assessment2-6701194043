@@ -119,4 +119,4 @@ function ubah($data)
 
   return mysqli_affected_rows($conn);
 }
-
+?>
