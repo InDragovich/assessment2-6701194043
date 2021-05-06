@@ -46,7 +46,6 @@ function tambahuser($data)
   $username = strtolower(stripcslashes(htmlspecialchars($data["username"])));
   $password = mysqli_real_escape_string($conn, $data["password"]);
   $password2 = mysqli_real_escape_string($conn, $data["password2"]);
-  $role = htmlspecialchars($data["role"]);
 
   //cek username sudah ada atau belum
   $result = mysqli_query($conn, "SELECT username FROM user WHERE username = '$username'");
@@ -76,7 +75,7 @@ if (mysqli_fetch_assoc($result)) {
 
   //insert data
   $query = "INSERT INTO user VALUES 
-   ('','$nama','$jeniskelamin','$email','$username','$password','$role');
+   ('','$nama','$jeniskelamin','$email','$username','$password');
 ";
   mysqli_query($conn, $query);
   return mysqli_affected_rows($conn);
